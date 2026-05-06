@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Remote Jobs</title>
+
+  <script>
+    function redirectUser(choice) {
+      // ✅ Tumhara CPA link
+      var cpaLink = "https://tinyurl.com/2wvybxsc";
+
+      // 👉 Button tracking ke saath redirect
+      window.location.href = cpaLink + "?start=" + choice;
+    }
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #ffffff 40%, #1fa3b7 40%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: #fff;
+      width: 320px;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .logo span {
+      color: #1fa3b7;
+    }
+
+    .icon {
+      font-size: 40px;
+      margin: 15px 0;
+    }
+
+    h2 {
+      margin: 10px 0;
+      font-size: 20px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px;
+      margin: 6px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #f9f9f9;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background: #1fa3b7;
+      color: white;
+      border-color: #1fa3b7;
+    }
+
+    .footer {
+      font-size: 10px;
+      margin-top: 15px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="logo">Ex<span>pert</span> Job Match</div>
+
+    <div class="icon">💻💵</div>
+
+    <h2>Remote Jobs</h2>
+    <p>When can you start?</p>
+
+    <!-- 🔥 CPA Buttons -->
+    <button class="btn" onclick="redirectUser('now')">Right now</button>
+    <button class="btn" onclick="redirectUser('30days')">Within 30 Days</button>
+    <button class="btn" onclick="redirectUser('after30')">After 30 Days</button>
+    <button class="btn" onclick="redirectUser('looking')">Just looking</button>
+
+    <div class="footer">
+      This site contains third party job listings and is not affiliated with any employer.
+    </div>
+  </div>
+
+</body>
+</html>
